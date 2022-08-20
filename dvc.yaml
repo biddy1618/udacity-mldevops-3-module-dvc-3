@@ -1,0 +1,11 @@
+stages:
+  pipeline:
+    cmd: python train_model.py
+    deps:
+    - train_model.py
+    - winequality-red.csv
+    params:
+    - n_estimators
+    metrics:
+    - f1.json:
+        cache: false

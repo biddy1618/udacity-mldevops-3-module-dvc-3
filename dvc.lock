@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  pipeline:
+    cmd: python train_model.py
+    deps:
+    - path: train_model.py
+      md5: be67b78dbf9a1d60ec84d6187b0e83e2
+      size: 963
+    - path: winequality-red.csv
+      md5: 2daeecee174368f8a33b82c8cccae3a5
+      size: 84199
+    params:
+      params.yaml:
+        n_estimators: 10
+    outs:
+    - path: f1.json
+      md5: b99234698aa801a096b6588e5b1f758b
+      size: 26
