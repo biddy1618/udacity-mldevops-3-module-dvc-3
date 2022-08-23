@@ -11,8 +11,8 @@ stages:
       size: 84199
     params:
       params.yaml:
-        n_estimators: 10
+        n_estimators: 1000
     outs:
     - path: f1.json
-      md5: b99234698aa801a096b6588e5b1f758b
+      md5: c00cf21e1171b3bb4e0d4a73c51a45d3
       size: 26
